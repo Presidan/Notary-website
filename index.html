@@ -13,12 +13,14 @@
         <div class="container">
             <nav>
                 <img src="/img/logo.jpeg" class="logo">
-                <ul>
+                <ul id="sidemenu">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Our Services</a></li>
                     <li><a href="#">Contact Us</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu"></i>
                 </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu"></i>
             </nav>
         </div>
         <div class="text_box">
@@ -113,6 +115,19 @@
     <p><b>Disclaimer: </b>We are not attorneys and cannot by law, interpret or explain the contents of any legal documents to you. If you have any important questions about<br> your documents please contact an attorney or the person who provided the documents to you. We are not allowed to draft legal documents, give advice on<br> legal matters, including immigration or charge a fee for these services.</p>
     <p>Copyright © 2021 Furman Notary Services, LLC – All Rights Reserved.</p>
 </div>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right ="-200px";
+    }
+
+</script>
 </body>
 </html>'
 '

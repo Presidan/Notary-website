@@ -251,3 +251,197 @@ form .btn{
     font-size: 20px;
     padding: 2vh 2vw;
 }
+
+/*---------------css for mobile screen----------*/
+nav .fa-solid{
+    display: none;
+}
+@media only screen and (max-width: 600px) {
+    #header{
+        background-image: url(/img/hero_img.png);
+    }
+    .text_box{
+        margin-top: 25%;
+        font-size: 16px;
+    }
+    .text_box h1{
+        font-size: 40px;
+    }
+    .text_box p{
+        font-size: 20px;
+    }
+    nav .fa-solid{
+        display: block;
+        font-size: 25px;
+    }
+    nav ul{
+        background: grey;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav ul .fa-solid{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    .txt_box h1{
+        font-family: Sawarabi Mincho;
+        padding-top: 3vh;
+        padding-bottom: 0vh;
+    }
+    .txt_box p{
+        padding: 5vh 5vw 8vh 5vw;
+        font-family: poppins;
+        font-size: 15px;
+    }
+    .txt_box p span{
+        color: red;
+        font-size: 15px;
+    }
+    .about{
+        display: block;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: -10vh 10vw;
+        align-items: center;
+    }
+    .about_col_1{
+        flex-basis: 60%;
+        text-align: center;
+        margin-top: 7vh;
+    }
+    .about_col_1 h1{
+        font-family: Sawarabi Mincho;
+        padding-bottom: 4vh;
+        font-size: 25px;
+    }
+    .about_col_1 p{
+        font-size: 15px;
+    }
+    .about_col_1 p span{
+        font-size: 20px;
+        color: red;
+    }
+    .about_col_2{
+        padding-top: 10vh;
+        padding-bottom: 3vh;
+        align-items: center;
+    }
+    .about_col_2 img{
+        width: 80%;
+        padding-bottom: 70px;
+    }
+    .serv_txt{
+        text-align: center;
+        padding-top: 5vh;
+    }
+    .serv_txt h1{
+        font-family: Sawarabi Mincho;
+        font-size: 25px;
+    }
+    .serv_txt p{
+        font-size: 15px;
+        padding-top: 1vh;
+    }
+    .row{
+        display: block;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-gap: 40px;
+        margin: 5vh 10vw;
+    }
+    .row_col_1 ul li{
+        font-size: 15px;
+        padding-bottom: 3vh;
+        margin-left: 15vw;
+        list-style: none;
+    }
+    .row_col_2 ul li{
+        font-size: 15px;
+        padding-bottom: 3vh;
+        margin-left: 16vw;
+        list-style: none;
+    }
+    .line{
+        border-top: 3px solid white;
+        margin-bottom: 5vh;
+        width: 70%;
+    }
+    .assist{
+        margin: -3vh 5vw;
+        text-align: center;
+    }
+    .assist h1{
+        font-family: Sawarabi Mincho;
+        padding-bottom: 3vh;
+        font-size: 25px;
+    }
+    .assist p{
+        font-size: 15px;
+        padding-bottom: 5vh;
+    }
+    #contact{
+        display: block;
+    }
+    .contact_col_1 h1{
+        font-family: Sawarabi Mincho;
+        padding-top: 4vh;
+        padding-bottom: 2vh;
+        padding-left: 5vw;
+        padding-right: 5vw;
+        font-size: 25px;
+    }
+    .contact_col_1 p{
+        margin-top: -2vh;
+        font-size: 15px;
+    }
+    .contact_col_2 form{
+        width: 100%;
+        margin-top: 10vh;
+    }
+    form input, form textarea{
+        width:80%;
+        border: 0;
+        outline: none;
+        background: rgb(158, 231, 13);
+        padding: 5px;
+        margin: 5px 0;
+        color: blue;
+        font-size: 15px;
+        border-radius: 10px;
+    }
+    form .btn{
+        padding: 2px 25px;
+        font-size: 20px;
+        margin-top: 15px;
+    }
+    #footer h1{
+        font-size: 20px;
+        font-family: Sawarabi Mincho;
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+    }
+    #footer .logo{
+        display: block;
+    }
+    .logo img{
+        width: 10vh;
+        margin: 5vh 2vw;
+        align-items: center;
+    }
+    #footer p{
+        font-size: 10px;
+        padding: 2vh 2vw;
+    }
+    
+}
